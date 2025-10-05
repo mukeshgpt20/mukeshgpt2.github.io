@@ -12,13 +12,11 @@
         {{ content }}
       </div>
     </main>
-
-    <footer style="text-align: center; padding: 1em 0; font-size: 0.9em; color: #555;">
-      © 2025 Mukesh Gupta. Connect with me on
-      https://www.linkedin.com/in/mukeshgupta
-        LinkedIn
-      </a>.
-    </footer>
+      <footer class="site-footer">
+    <div class="wrapper">
+      <p>© {{ site.time | date: "%Y" }} {{ site.title }}. Connect with me on <a href="{{ site.author.linkedin }}" target="_blank">LinkedIn</a>.</p>
+    </div>
+  </footer>
 
   </body>
 
