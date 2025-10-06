@@ -17,4 +17,17 @@ layout: default
     {{ content }}
   </div>
 
+  {% if page.comments != false %}
+    <section id="comments" style="margin-top: 3em;">
+      <script src="https://utteranc.es/client.js"
+              repo="your-github-username/your-repo-name"
+              issue-term="pathname"
+              label="💬 comments"
+              theme="preferred-color-scheme"
+              crossorigin="anonymous"
+              async>
+      </script>
+    </section>
+  {% endif %}
+
 </article>
